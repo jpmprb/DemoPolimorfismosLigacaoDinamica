@@ -37,11 +37,11 @@ class ClassWithSeveralTexts {
     public List<String> getQuotedTexts() {
         List<String> texts = new ArrayList<>();
         for (Quotable qt : this.excerpts) {
-            if (qt.getClass() == QuotedSingle.class) {
+            if (qt.getClass() == QuoteSingle.class) {
                 texts.add("'" + qt.text() + "'");
-            } else if (qt.getClass() == QuotedNormal.class) {
+            } else if (qt.getClass() == QuoteNormal.class) {
                 texts.add("\"" + qt.text() + "\"");
-            } else if (qt.getClass() == QuotedFancy.class) {
+            } else if (qt.getClass() == QuoteFancy.class) {
                 String leftMark = Character.toString((char) 0x00AB);
                 String rightMark = Character.toString((char) 0x00BB);
                 texts.add(leftMark + qt.text() + rightMark);

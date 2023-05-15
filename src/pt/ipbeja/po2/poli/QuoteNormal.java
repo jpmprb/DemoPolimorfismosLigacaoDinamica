@@ -4,9 +4,9 @@ package pt.ipbeja.po2.poli;
  * @author João Paulo Barros
  * @version 2020/05/12
  */
-class QuotedNormal extends Quote {
+class QuoteNormal extends Quote {
 
-    public QuotedNormal(String text, String author) {
+    public QuoteNormal(String text, String author) {
         super(text, author);
     }
 
